@@ -1,5 +1,0 @@
-1_[x] A API deverá ter uma rota específica do tipo POSTpara a criação de transações. (Prioridade: Alta)
-2-[x] Na hora da criação de uma transação, deverá ser registrado um ID únicoe a data de criação, de forma automática. (Prioridade: Alta)
-3_[x] A API deverá ter uma rota específica do tipo GETpara a listagem de transações. (Prioridade: Alta)
-4_[x] A API deverá ter uma rota específica do tipo PUTpara a edição de uma transação, a partir do IDfornecido via parametrização da rota. (Prioridade: Média)
-5_[x] A API deverá ter uma rota específica do tipo DELETEpara realizar a exclusão de uma transação, a partir do IDfornecido via parametrização da rota. (Prioridade: Média)
