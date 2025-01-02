@@ -22,19 +22,26 @@ class TransacoesRepositoryinMemory{
     }
     
     async atualizaTransacao (id, transacao){
-        console.log('data', data)
         const index = await data.findIndex((transacao) => transacao.id === id);
         if (index === -1){
-            console.log('id', id)
-            console.log('transacao', transacao)
             throw new Error('Transação não encontrada')
         }
-        console.log('index', index);
         data[index] = {
             id,
             date,
             ...transacao
         }
+    }
+
+    deleteTransacao (id){
+        const index = data.findIndex((transacao) => transacao.id === id);
+
+        if (index !== -1){
+            data.splice(index, 1);
+        }else{
+            console.log(`Transação não encontrada`)
+        }
+        return data;
     }
 }
 
